@@ -10,6 +10,7 @@ class Actor < ActiveRecord::Base
     roles = []
     
     characters.each do |x|
+      roles << "#{x.name} - #{}"
     end
   end
 end
