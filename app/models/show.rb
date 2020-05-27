@@ -7,4 +7,8 @@ class Show < ActiveRecord::Base
     network = Network.create(call_letters: call_letters)
     self.network = network
   end
+  
+  def actors_list
+    
+  end
 end
