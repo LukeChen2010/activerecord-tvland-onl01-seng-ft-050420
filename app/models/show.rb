@@ -9,6 +9,6 @@ class Show < ActiveRecord::Base
   end
   
   def actors_list
-    
+    return self.actors.full_name
   end
 end
