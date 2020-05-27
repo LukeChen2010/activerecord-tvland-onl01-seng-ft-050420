@@ -9,6 +9,12 @@ class Show < ActiveRecord::Base
   end
   
   def actors_list
-    return self.actors.full_name
+    list = []
+    
+    self.actors.each do |x|
+      list << x.full_name
+    end
+    
+    return list
   end
 end
